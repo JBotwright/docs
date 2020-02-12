@@ -12,8 +12,12 @@ The following stanza is required in your local ``~/.ssh/config`` in order to tra
     User XX-USERNAME
     ForwardAgent yes
     ForwardX11 yes
+
+  Host login.isambard.gw4.ac.uk login.isambard
+    User XX-USERNAME
+    ProxyCommand ssh isambard.gw4.ac.uk 'c=$(($RANDOM/16384)); nc -w1 login-0$c %p; nc -w 1 login-0$((1-$c)) %p'
   
-  Host login-01.isambard.gw4.ac.uk login-01.isambard login.isambard
+  Host login-01.isambard.gw4.ac.uk login-01.isambard
     Hostname login-01
     User XX-USERNAME
     ProxyCommand ssh isambard.gw4.ac.uk 'nc %h %p'
@@ -23,7 +27,11 @@ The following stanza is required in your local ``~/.ssh/config`` in order to tra
     User XX-USERNAME
     ProxyCommand ssh isambard.gw4.ac.uk 'nc %h %p'
   
-  Host xcil00.isambard.gw4.ac.uk xcil00.isambard xci.isambard
+  Host xcil.isambard.gw4.ac.uk xcil.isambard xci.isambard
+    User XX-USERNAME
+    ProxyCommand ssh isambard.gw4.ac.uk 'c=$(($RANDOM/16384)); nc -w1 xcil0$c %p; nc -w 1 xcil0$((1-$c)) %p'
+  
+  Host xcil00.isambard.gw4.ac.uk xcil00.isambard
     Hostname xcil00
     User XX-USERNAME
     ProxyCommand ssh isambard.gw4.ac.uk 'nc %h %p'
