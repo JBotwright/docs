@@ -7,31 +7,44 @@ Isambard User Documentation
 ===========================
 
 Isambard is a HPC service provided by `GW4 <http://gw4.ac.uk>`_ and the `UK Met Office <https://www.metoffice.gov.uk>`_.
-The system is funded by `EPSRC <http://www.epsrc.ac.uk>`_ and is one of a number of `Tier-2 HPC facilities http://www.hpc-uk.ac.uk/facilities/` in the UK.
+The system is funded by `EPSRC <http://www.epsrc.ac.uk>`_ and is one of a number of `Tier-2 HPC facilities <http://www.hpc-uk.ac.uk/facilities/>`_ in the UK.
 
-Isambard is a Cray XC50 system which comprises 20,992 cores, and is one of the worlds first production Arm-based supercomputers. While Isambard is not based on the more common x86 processors from Intel and AMD, most software compiles and runs on Isambard with no or minimal changes.
+Isambard is a Cray XC50 system which comprises 20,992 cores, and is one of the world's first production Arm-based supercomputers. While Isambard is not based on the more common x86 processors from Intel and AMD, most software compiles and runs on Isambard with no or minimal changes.
 
 Each of the 329 compute nodes contain two 32-core Marvell ThunderX2 processors running at 2.5 GHz. 160 nodes have 256 GB and 169 have 512 GB of memory, both at DDR4-2666MHz.
 The nodes are connected via Cray Aries interconnect in a Dragonfly topology.
 A Cray Sonexion 3000 storage cabinet provides 900 terabytes of Lustre storage.
 
+Maintenance
+-----------
+
+.. important::
+   The GW4 Isambard **Multi-Architecture Comparison System** is unavailable for the week of 19th April to perform planned upgrades & maintenance of the software stack.
+
+   This is a major software upgrade to Red Hat Enterprise Linux 8, bringing the Operating System major version inline with the A64FX service, it provides a better base for software development and improves the MACS compability with scientific software, including the Cray software stack.
+
+   Some user software compatibility issues are to be expected due to changed/updated libraries, recompilations may be required to continue running on MACS.
+
+   XCI & A64FX remain available during this time.
+   
+   Update: Work has continued into the week of 26th April, we aim to restore service as soon as possible.
 
 System Status
 -------------
 
 .. important::
-    18 Jan. 2021
+    19 Apr. 2021
     
     - XCI (ARM ThunderX2): Available
-    - MACS: Available
-    - A64fx: In testing - Will be UNAVAILABLE on Thurs 21 Jan for scheduled maintennce
+    - MACS: Unavailable, upgrades in progress
+    - A64fx: Available
 
 Acknowledging Isambard
 ----------------------
 
 Research outputs that have made use of Isambard should acknowledge the facility by using the following phrase:
 
-    *This work used the Isambard UK National Tier-2 HPC Service (http://gw4.ac.uk/isambard/) operated by GW4 and the UK Met Office, and funded by EPSRC (EP/P020224/1)*
+    *This work used the Isambard 2 UK National Tier-2 HPC Service (http://gw4.ac.uk/isambard/) operated by GW4 and the UK Met Office, and funded by EPSRC (EP/T022078/1)*
 
 
 .. toctree::
@@ -45,10 +58,13 @@ Research outputs that have made use of Isambard should acknowledge the facility 
    user-guide/MACS.rst
    user-guide/XCI.rst
    user-guide/A64FX.rst
+   user-guide/software.md
    user-guide/debugging.rst
-   user-guide/profiling.rst
    user-guide/end_project.rst
    user-guide/support.rst
+
+.. TODO
+   user-guide/profiling.rst
 
 
 .. toctree::
@@ -57,6 +73,8 @@ Research outputs that have made use of Isambard should acknowledge the facility 
 
    tools/ddt
    tools/gdb4hpc
+
+.. TODO
    tools/map
    tools/perftools
 
@@ -65,22 +83,23 @@ Research outputs that have made use of Isambard should acknowledge the facility 
    :maxdepth: 1
    :caption: Applications
 
-   applications/castep
    applications/covidsim
-   applications/cp2k
    applications/dedalus
    applications/dlmonte
    applications/firedrake
    applications/gromacs
+   applications/openfoam
+   applications/vasp
+
+.. TODO
+  applications/castep
+   applications/cp2k
    applications/hydro3d
    applications/molpro
    applications/namd
    applications/nemo
-   applications/openfoam
    applications/opensbli
    applications/um
-   applications/vasp
-
 
 .. toctree::
    :maxdepth: 1
