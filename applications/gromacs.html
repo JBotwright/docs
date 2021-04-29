@@ -1,42 +1,46 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>GROMACS &mdash; GW4-Isambard  documentation</title>
   
 
   
-  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hydro3D" href="hydro3d.html" />
-    <link rel="prev" title="CP2K" href="cp2k.html" /> 
+    <link rel="next" title="OpenFOAM" href="openfoam.html" />
+    <link rel="prev" title="Firedrake" href="firedrake.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -59,6 +63,10 @@
           
             
             
+              <div class="version">
+                2.0
+              </div>
+            
           
 
           
@@ -73,6 +81,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -86,24 +95,25 @@
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/connecting.html">Connecting to Isambard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/filesystem.html">Filesystem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/jobs.html">Running jobs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user-guide/phase1.html">Phase 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user-guide/phase2.html">Phase 2 - XC50 ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/MACS.html">Multi-Architecture Comparison System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/XCI.html">XCI - Marvell Thunder X2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/A64FX.html">A64FX - Fujitsu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user-guide/profiling.html">Profiling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/end_project.html">End of life procedures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user-guide/support.html">Getting Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/support.html">Support</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Development Tools</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tools/ddt.html">Arm DDT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/gdb4hpc.html">gdb4hpc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/map.html">Arm MAP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/perftools.html">Cray perftools (CrayPAT)</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Applications</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="castep.html">CASTEP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cp2k.html">CP2K</a></li>
+<li class="toctree-l1"><a class="reference internal" href="covidsim.html">CovidSim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dedalus.html">Dedalus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dlmonte.html">DL_MONTE 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="firedrake.html">Firedrake</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">GROMACS</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#useful-links">Useful links</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#licensing">Licensing</a></li>
@@ -116,13 +126,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="hydro3d.html">Hydro3D</a></li>
-<li class="toctree-l1"><a class="reference internal" href="molpro.html">MolPro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="namd.html">NAMD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nemo.html">NEMO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openfoam.html">OpenFOAM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="opensbli.html">OpenSBLI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="um.html">Unified Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vasp.html">VASP</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Service Policies</span></p>
@@ -134,6 +138,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -150,9 +155,11 @@
 
       <div class="wy-nav-content">
         
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
         
           
+
+
 
 
 
@@ -172,14 +179,14 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>GROMACS</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             
               <a href="https://github.com/gw4-isambard/docs/blob/master/applications/gromacs.rst" class="fa fa-github"> Edit on GitHub</a>
             
@@ -200,7 +207,7 @@
 <div class="section" id="useful-links">
 <h2>Useful links<a class="headerlink" href="#useful-links" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="http://manual.gromacs.org/documentation/current/user-guide/index.html">GROMACS user documentation</a></li>
+<li><p><a class="reference external" href="http://manual.gromacs.org/documentation/current/user-guide/index.html">GROMACS user documentation</a></p></li>
 </ul>
 </div>
 <div class="section" id="licensing">
@@ -211,7 +218,7 @@
 <h2>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
 <p>The following versions of GROMACS are currently available:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">load</span> <span class="pre">apps/gromacs/2018.4</span></code> (MPI enabled, no double precision)</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">load</span> <span class="pre">apps/gromacs/2018.4</span></code> (MPI enabled, no double precision)</p></li>
 </ul>
 </div>
 <div class="section" id="running">
@@ -257,29 +264,29 @@ At large scale, you may find that reducing the number of MPI ranks and increasin
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="hydro3d.html" class="btn btn-neutral float-right" title="Hydro3D" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="cp2k.html" class="btn btn-neutral float-left" title="CP2K" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="openfoam.html" class="btn btn-neutral float-right" title="OpenFOAM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="firedrake.html" class="btn btn-neutral float-left" title="Firedrake" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, GW4
+        &#169; Copyright 2021, GW4.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -287,7 +294,6 @@ At large scale, you may find that reducing the number of MPI ranks and increasin
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

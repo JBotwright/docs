@@ -1,42 +1,46 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>VASP &mdash; GW4-Isambard  documentation</title>
   
 
   
-  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Terms and Conditions" href="../policies/terms.html" />
-    <link rel="prev" title="Unified Model" href="um.html" /> 
+    <link rel="prev" title="OpenFOAM" href="openfoam.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -59,6 +63,10 @@
           
             
             
+              <div class="version">
+                2.0
+              </div>
+            
           
 
           
@@ -73,6 +81,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -86,32 +95,27 @@
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/connecting.html">Connecting to Isambard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/filesystem.html">Filesystem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/jobs.html">Running jobs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user-guide/phase1.html">Phase 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user-guide/phase2.html">Phase 2 - XC50 ARM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/MACS.html">Multi-Architecture Comparison System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/XCI.html">XCI - Marvell Thunder X2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/A64FX.html">A64FX - Fujitsu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/debugging.html">Debugging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user-guide/profiling.html">Profiling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user-guide/end_project.html">End of life procedures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user-guide/support.html">Getting Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/support.html">Support</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Development Tools</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tools/ddt.html">Arm DDT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/gdb4hpc.html">gdb4hpc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/map.html">Arm MAP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/perftools.html">Cray perftools (CrayPAT)</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Applications</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="castep.html">CASTEP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cp2k.html">CP2K</a></li>
+<li class="toctree-l1"><a class="reference internal" href="covidsim.html">CovidSim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dedalus.html">Dedalus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dlmonte.html">DL_MONTE 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="firedrake.html">Firedrake</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gromacs.html">GROMACS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hydro3d.html">Hydro3D</a></li>
-<li class="toctree-l1"><a class="reference internal" href="molpro.html">MolPro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="namd.html">NAMD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nemo.html">NEMO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openfoam.html">OpenFOAM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="opensbli.html">OpenSBLI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="um.html">Unified Model</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">VASP</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#useful-links">Useful links</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#licensing">Licensing</a></li>
@@ -140,6 +144,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -156,9 +161,11 @@
 
       <div class="wy-nav-content">
         
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
         
           
+
+
 
 
 
@@ -178,14 +185,14 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>VASP</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             
               <a href="https://github.com/gw4-isambard/docs/blob/master/applications/vasp.rst" class="fa fa-github"> Edit on GitHub</a>
             
@@ -206,8 +213,8 @@
 <div class="section" id="useful-links">
 <h2>Useful links<a class="headerlink" href="#useful-links" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="http://www.vasp.at/">Vasp</a></li>
-<li><a class="reference external" href="http://www.vasp.at/index.php/documentation">Documentation</a></li>
+<li><p><a class="reference external" href="http://www.vasp.at/">Vasp</a></p></li>
+<li><p><a class="reference external" href="http://www.vasp.at/index.php/documentation">Documentation</a></p></li>
 </ul>
 </div>
 <div class="section" id="licensing">
@@ -244,7 +251,7 @@
 
 <span class="c1"># Load modules for currently recommended VASP build - see build instructions for more info</span>
 module swap PrgEnv-cray PrgEnv-gnu
-module swap gcc/8.2.0 gcc/7.3.0
+module swap gcc gcc/7.3.0
 
 <span class="c1"># Move to directory that script was submitted from</span>
 <span class="nb">export</span> <span class="nv">PBS_O_WORKDIR</span><span class="o">=</span><span class="k">$(</span>readlink -f <span class="nv">$PBS_O_WORKDIR</span><span class="k">)</span>
@@ -292,14 +299,14 @@ mpirun -np <span class="m">36</span> vasp_std <span class="m">2</span>&gt;<span 
 <div class="section" id="id2">
 <h3>Arm<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>Instructions for building Vasp on Arm:</p>
-<p>Download <a class="reference download internal" download="" href="../_downloads/12777f28e358c09fa9dfa83a5752b589/makefile.include.arm"><code class="xref download docutils literal notranslate"><span class="pre">makefile.include.arm</span></code></a> and copy it to <cite>makefile.include</cite> in the root of the source folder</p>
+<p>Download <a class="reference download internal" download="" href="../_downloads/c272c94bc89242c938e46b59b25bb1e9/makefile.include.arm"><code class="xref download docutils literal notranslate"><span class="pre">makefile.include.arm</span></code></a> and copy it to <cite>makefile.include</cite> in the root of the source folder</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load modules for currently recommended VASP build - see build instructions for more info</span>
 
 <span class="c1"># Currently we recommend compiling with the gnu programming environment</span>
 module swap PrgEnv-cray PrgEnv-gnu
 
 <span class="c1"># There is a compilation issue with gcc 8 so switch to gcc 7</span>
-module swap gcc/8.2.0 gcc/7.3.0
+module swap gcc gcc/7.3.0
 
 <span class="c1"># And build vasp, replace all with std, ncl, gam for individual targets</span>
 make all
@@ -309,7 +316,7 @@ make all
 <div class="section" id="id3">
 <h3>x86<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Instructions for building Vasp on x86:</p>
-<p>Download <a class="reference download internal" download="" href="../_downloads/42699a84820667e4efa3e20d10835413/makefile.include.x86"><code class="xref download docutils literal notranslate"><span class="pre">makefile.include.x86</span></code></a> and copy it to <cite>makefile.include</cite> in the root of the source folder.  Alternatively copy makefile.include.linux_intel from the <cite>arch</cite> folder as these files are identical.</p>
+<p>Download <a class="reference download internal" download="" href="../_downloads/6731eab6e80d1ed229ae5e08407d317c/makefile.include.x86"><code class="xref download docutils literal notranslate"><span class="pre">makefile.include.x86</span></code></a> and copy it to <cite>makefile.include</cite> in the root of the source folder.  Alternatively copy makefile.include.linux_intel from the <cite>arch</cite> folder as these files are identical.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load modules for build</span>
 
 module purge
@@ -336,29 +343,29 @@ make all
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../policies/terms.html" class="btn btn-neutral float-right" title="Terms and Conditions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="um.html" class="btn btn-neutral float-left" title="Unified Model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="../policies/terms.html" class="btn btn-neutral float-right" title="Terms and Conditions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="openfoam.html" class="btn btn-neutral float-left" title="OpenFOAM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, GW4
+        &#169; Copyright 2021, GW4.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -366,7 +373,6 @@ make all
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
